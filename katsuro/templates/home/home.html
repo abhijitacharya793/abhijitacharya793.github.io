@@ -6,10 +6,25 @@
       class="uk-height-large uk-card uk-card-secondary uk-card-body uk-flex uk-flex-center uk-flex-middle uk-width-4-5"
     >
       <div>
-        <h1 class="uk-text-name uk-heading-medium uk-text-uppercase">
-          Abhijit Acharya
-        </h1>
+        <button class="uk-button uk-button-text">
+          <h1 class="uk-text-name uk-heading-medium uk-text-uppercase">
+            Abhijit Acharya
+          </h1>
+        </button>
         <p class="uk-text-uppercase">_____ / _____ Hacker & Developer</p>
+        <div>
+          <div class="uk-button-group">
+            <a href="{% url 'about' %}"
+              ><button class="uk-button uk-button-secondary">About</button></a
+            >
+            <a href="{% url 'blog' %}"
+              ><button class="uk-button uk-button-secondary">Blog</button></a
+            >
+            <a href="{% url 'contact' %}"
+              ><button class="uk-button uk-button-secondary">Contact</button></a
+            >
+          </div>
+        </div>
       </div>
     </div>
     <div class="uk-width-1-5"></div>

@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def about(request):
     context = {'latest_question_list': 'test'}
-    return render(request, 'home/about.html', context)
+    return render(request, 'about/about.html', context)
 
 
 def contact(request):
