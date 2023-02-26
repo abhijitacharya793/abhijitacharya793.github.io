@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/uikit.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/uikit.min.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Roboto+Mono:wght@100;300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="{% static 'js/uikit.min.js' %}"></script>
+    <script src="{% static 'js/uikit-icons.js' %}"></script>
+  </head>
+  <body>
+    <div>
+      <!-- TOP NAVIGATION -->
+      {% block navigation %}{% endblock %}
+      <!-- SIDE NAVIGATION -->
+      {% block sidenav %}{% endblock %}
+      <!-- CONTENT -->
+      {% block content %}{% endblock %}
+    </div>
+  </body>
+</html>
